@@ -1,5 +1,15 @@
-//Krishna here 
+import React from 'react';
+import { View, Text } from 'react-native';
+import Map from './components/Map';
+import RideRequest from './components/RideRequest';
+import WalletConnect from './components/WalletConnect';
 
-//nilima patil
-
-//nilima
+export default function Home() {
+  return (
+    <View className="flex-1">
+      <Map />
+      <RideRequest />
+      <WalletConnect />
+    </View>
+  );
+}

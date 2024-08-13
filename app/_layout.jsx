@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Tabs } from 'expo-router';
 
-export default function App() {
+export default function AppLayout() {
   return (
-    <View style={styles.container}>
-      <Text className="text-4xl text-rose-600">Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Tabs>
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: 'Home',
+        }}
+      />
+      <Tabs.Screen
+        name="ride"
+        options={{
+          title: 'Ride',
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+        }}
+      />
+    </Tabs>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
