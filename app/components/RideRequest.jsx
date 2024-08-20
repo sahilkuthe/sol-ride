@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { View, TextInput, Button } from 'react-native';
 
 export default function RideRequest() {
-  const [pickup, setPickup] = useState('');
-  const [destination, setDestination] = useState('');
+  const [pickup, setPickup] = useState("");
+  const [destination, setDestination] = useState("");
 
   const handleRequest = () => {
     console.log('Requesting ride from', pickup, 'to', destination);
+    
   };
 
   return (
